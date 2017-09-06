@@ -1,0 +1,1023 @@
+/* STILI CONVENZIONALI*/
+* {
+    margin: 0;
+}
+a:link{
+    color: #2F2FD5;
+}
+a:focus, a:hover{
+    color: #003300;
+    font-weight: bold;
+    background-color: white;
+}
+input[type="submit"]:focus{
+    background-color: #003300;
+}
+#contenuto a:focus img , #contenuto a img:hover{
+    border:  5px solid #214178 ; 
+}
+label, input,select{
+    margin: 0.5em 0;
+}
+select{
+    height: 2em;
+    font-size: 108%;
+}
+fieldset, input:not([type="submit"]){   
+    border-radius: 0.5em;
+}
+input[type="text"],input[type="password"] {
+    border: 1px solid;
+    padding: 0 0.3em; 
+    width: 65%;
+    height: 2em;
+    font-size: 105%;
+}
+input, select, textarea{ 
+    max-width: 95%;
+}
+input:not([type="submit"]):focus, textarea:focus, select:focus{
+    border-color: #b35900;
+    box-shadow: 0 0 2em #b35900;
+}
+input[type="submit"]{
+    max-width: 40%;
+    padding: 1%;
+    background-color: #214178;
+    border-radius: 0.5em;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1em;
+}
+body{
+    min-height: 100%;
+    padding: 0;
+    width: 100%;
+    font-size: 105%;
+    background-color: #f2f2f2;
+}
+/* STILI GENERALI HEADER,  NAVIGAZIONE PRINCIPALE, CONTENUTO  E FOOTER*/
+#header{
+    clear:both;
+    color: white;
+    background-color: black; 
+    background-image: url("images/eventi.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 58% top;
+    height: 8em;
+    padding-top: 2em;
+}
+#header p, #header h1{
+    margin-left: 1em;
+}
+#header h1{
+    text-align: left;
+}
+h4.menuclick{
+    width: 95%;
+    text-align: center;
+}
+#nav{
+    margin-bottom: 5%;
+}
+#nav ul li{
+    padding: 0.5%;
+    border-radius: 10%;
+    margin: 1% 2% 0 0;
+}
+
+#nav ul li[id="searchBoxTop"]{
+    float: none;
+    padding: 0;
+    position: absolute;
+    right:0;
+    top: 4em;
+    left: 75%;
+    color: white;
+    width: 25%;
+    margin: 0;
+}
+.clickedNav{/*Questa classe viene anche usata sul menù di navigazione dello spazio utente*/
+    background-color: black;
+    color: white;
+}
+#searchBoxTop fieldset{
+    border: 0;
+}
+#nav ul, #contenuto ul, #contenuto ol, #showerror ul{
+    list-style-type: none;  
+}
+#contenuto{
+    margin: 0 1% 3% 2%;
+}
+#breadcrumb{
+    border: 3px solid #000033;
+    width: 95%;
+    padding: 0.5% 1%;
+    color: #000033;
+    font-weight: bold;
+    margin: 0 1%;
+    margin-bottom: 3%;
+}
+#tornasu a{
+   position: fixed;
+   bottom: 2%;
+   padding: 0.7em 0.8em;
+   border: 2px solid;
+   border-radius: 50%;
+   background-color: #214178;
+   width: 2em;  
+   right: 0.5%;
+   font-size: 70%;
+   color: white;
+}
+#tornasu span{
+   padding-right: 0.8em;
+}
+#footer{
+    width: 100%;
+    height: 30%;
+    padding: 2% 0;
+    background-color: black;
+    color: white;
+    margin-top: 17%;
+    display:inline-block;
+ }
+
+/* HOMEPAGE*/
+
+#primo_piano ul li a img{
+    width: 40%;
+    max-height: 25em;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    border: 0;
+}
+#primo_piano ul li{
+    margin-top: 4%;
+    margin-right: 4%;
+    border: 2px solid;
+    border-radius: 1em;
+    overflow: hidden;
+}
+#primo_piano h2{
+   border-bottom: 2px solid; 
+   padding: 1% 0;
+}
+/* TIPI EVENTI, CATEGORIE E EVENTI NELLA TUA CITTA'*/
+#cataloger{
+    margin-top: 2%;
+}
+#resultlist{
+    clear: both;
+    display: inline-block;
+    margin-top: 4%;
+    width: 95%;
+}
+#resultlist ul, #resultlist h3{
+    margin-top: 2%;
+}
+#resultlist li, #cataloger li{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+ #cataloger li {
+    float: left;
+ }
+#citysearch form{
+    margin: 0 auto;
+    width: 40%;
+}
+#citysearch input:not([type="submit"]){
+    width: 50%;
+}
+/* SPAZIO PERSONALE E SPAZIO ADMIN*/
+#navUtente h4{
+    margin-bottom: 3%;
+}
+#navUtente .clickedNav{
+    padding: 1% 3%;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+#navUtente{
+    width: 28%;
+    border: 2px solid;
+    border-radius: 5%;
+    padding: 2% 0;
+    padding-right: 1%;
+}
+#navUtente li{
+    margin-bottom: 2%;
+}
+#selectedNav{
+    width: 67%;
+    padding-left: 1%;
+}
+.linkGest{
+    border-top: 2px solid;
+    padding-top: 1%;
+    margin-top: 2%;
+}
+
+#risultaticontent li{
+    border: 2px solid;
+    padding: 2% 3%;
+    margin-top: 2%;
+}
+#searchUserform{
+    width: 30%;
+}
+#searchUserform select, #searchUserform input:not([type="submit"]){
+   width: 95%; 
+}
+#searchUserform input[type="submit"]{
+   width: 75%; 
+}
+#risultaticontent{
+    width: 65%;
+    margin-right: 3%;
+}
+#lista_SUresults li p{
+    margin-top: 2%;
+}
+/*View event*/
+
+#eventDetail img{
+    width: 13em;
+    height: 12em;
+}
+#eventDetail{
+    width: 60%;
+    padding: 2%;
+    margin-right: 2%;
+    background-color: white;
+}
+#fotoev{
+    margin-top: 3%;
+}
+#eventDetail h3{
+    margin-bottom: 2%;
+}
+#infoev{
+    border: 1px solid;
+    padding: 1% 3%;
+    width: 80%;
+}
+#partecipazioni{
+    margin-top: 3%;
+}
+#bdesc p{
+    margin: 0.5% 0;
+    font-style: italic;
+}
+#bdesc, #desc{
+    padding: 2% 3%;
+}
+#viewfullfoto img{
+    margin: 0 auto;
+    max-width: 95%;
+    max-height: 95%;
+}
+#viewfullfoto strong{
+    width: 10%;
+    margin: 0 auto;
+}
+/* OGGETTI CONDIVISI IN ALMENO 2 PAGINE */
+#showerror, #shownoerror{/*showerror è lo stile applicato all'elemento che contiene un messaggio di errore, esempio un errore nell'inserimento di un input.*/
+ /*Invece shownoerror è lo stile applicato all'elemento che contiene un messaggio di inserimento corretto*/
+    background-color: white;
+    padding: 2% 0;
+}
+#showerror{
+    color: #b32400;
+}
+#showerror li{
+    margin-top: 1%;
+}
+#shownoerror{
+    color: #009933;
+}
+input.erroreinput, textarea.erroreinput{/*E' lo stile applicato agli elementi della form che hanno generato un errore*/
+    border: 3px solid #b32400; 
+}
+#gotopagina div{/*gotopagina è l'id dato all'elemento che contiene la mini form che permette di navigare tra le pagine dei risultati*/
+    margin: 2% 0;
+}
+.prevpage{/*Gli elementi che contengono i link che portano alla pagina precedente dei risultati*/
+    margin-right: 2%;
+}
+.nextpage{/*Gli elementi che contengono i link che portano alla pagina successiva dei risultati*/
+    float: right;
+}
+#gotopagina form{
+    width: 50%;
+    margin: 3% auto;
+}
+#gotopagina select, #gotopagina label{
+    width: 9em;
+    margin: 0 auto;
+}
+#gotopagina input[type="submit"]{
+    width: 4em;
+    margin: 0 auto;
+}
+.paginacorrente{/*Lo stile applicato agli elementi che contengono il testo che indica la pagina dei risultati attuale*/
+    margin-top: 3%;
+}
+.annulla, #editfotolink a{ /*annulla la classe degli elementi che contengono i link per annullare una certa operazione . editfotolink è l'id dato all'elemento che contiene */
+/*il link che porta alla gestione foto*/
+    padding: 1% 0;
+    width: 50%; 
+    margin: 2% auto;
+    border: 2px solid #b32400;
+}
+#editfotolink a{
+    border: 2px solid #336699;
+}
+#aiutologo{/*aiutologo è l'id dato all'emento prima di ogni form, che contiene il link verso informazioni ed aiuto*/
+   display : block;
+   padding: 3% 2%;
+}
+.rangedata div{/*le classi degli elementi rangedata e interv, sono le classi degli elementi che contengono i tag input per date o ra*/
+    width: 30%;
+    margin-right: 3%;
+}
+#contenuto .rangedata .interv div{
+    width: 30%;
+    margin-right: 0.4em;
+}
+#searchbox .rangedata input, #infoinput .rangedata input{
+    width: 1.5em;
+    margin-left: 0.3em;
+}
+#infoinput .rangedata{
+    width: 50%;
+}
+#contenuto .rangedata input[class="anno"], #contenuto .anno.erroreinput{
+    width: 3em;
+}
+#contenuto .rangedata input{
+    text-align: right;
+}
+#searchbox .interv {
+    width: 90%;
+    clear:both;
+}
+/*SIGNUP, IMPOSTAZIONI ACCOUNT E LOGIN*/
+#signupBody{
+    background-color: black;
+    background-image: url("images/spotlight.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+}
+.formusersdata input{
+    width: 70%;
+}
+.formusersdata input[type="submit"]{
+    width: 50%;
+    margin: 0 auto;
+}
+.formusersdata{  
+    width: 35%; 
+    background-color: white;
+    border: 2px solid;
+    border-radius: 2em;
+    margin: 0 2.5%;
+    padding: 1.5% 3%;
+}
+.formusersdata input[type="submit"], #de{  
+    margin: 2% 3%;
+}
+#signupBody div form > fieldset{  
+    border: 0;
+}
+#logBody{
+    background-color: black;
+    background-image: url("images/eventi3.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*PROFILO UTENTE*/
+#infoUt, #social,#gestUt, #published{
+    margin-bottom: 3%;
+    margin-right: 3%;
+    padding: 1% 2%;
+    border: 2px solid;
+    border-radius: 1em;
+    background-color: white;
+}
+#infoUt{
+    width: 40%;
+}
+#infoUt h2{
+    margin-bottom: 3%;
+}
+#infoUt li, #social p{
+    margin-top: 2%;
+}
+#published,#messaggio{
+    width: 70%;
+    margin-bottom: 3%;
+}
+#gestUt span{
+    margin-bottom: 2%;
+}
+#linkToAll{
+    display: block;
+    text-align: center;
+    padding: 2%;
+    border: 2px solid;
+    width: 40%;
+    margin: 4% auto;
+}
+/*INSERIMENTO, MODIFICA ANNUNCIO PAGINA*/
+#addEventForm, #etichette, #jumptofoto{
+    margin: 3%;
+}
+#infoinput .rangedata div{
+    margin-right: 5%;
+    width: 20%;
+}
+.uploadsfotos,#etichette div{
+    margin-left: 1%;
+    width: 28%;
+}
+.uploadsfotos input, #etichette input{
+    width: 95%;
+}
+.particompilazione{
+    border: 2px solid;
+    padding: 2% 3%;
+    margin-bottom: 2%;
+    background-color: white;
+}
+#addEventForm fieldset{
+    margin-top: 1%;
+}
+#addEventForm form > fieldset{
+    border: 0;
+}
+#addEventForm form > fieldset > legend{
+    font-size: 130%;
+    font-weight: bold;
+}
+#addEventForm select{
+    min-width: 60%;
+}
+#addEventForm input[maxlength="100"]{
+    width: 85%;
+}
+#addEventForm input[maxlength="30"]{
+    width: 35%;
+}
+#addEventForm textarea{
+    width: 95%;   
+}
+#addEventForm #pubadesso{
+    width: 90%; 
+    margin: 3% auto;
+}
+#addEventForm #pubadesso input{
+    min-width: 60%; 
+    margin: 2% auto;
+}
+/*GESTIONE FOTO ANNUNCIO*/
+#oldFoto, #newFoto{
+ margin-bottom: 2%;
+ margin-left: 2%;
+ border: 2px solid;
+ border-radius: 0.5em;
+ padding: 2%;
+ background-color: white;
+}
+#oldFoto{
+    width: 30%;
+}
+#oldFoto li{
+    padding: 2%;
+    border: 2px outset;
+    margin-top: 3%;
+}
+#newFoto{
+    width: 50%;
+    margin-right: 3%;
+}
+#newFoto > form > fieldset{
+    border: 0;
+}
+#newFoto > form {
+    margin: 2% 0;
+}
+#newFoto > form > fieldset > legend{
+    font-size: 130%;
+    margin:0 auto;
+}
+#newFoto > form > fieldset > legend, #contenuto #newFoto input[type="submit"]{
+    margin: 0 auto;
+}
+#contenuto #newFoto input[type="submit"]{
+    max-width: 90%;
+}
+#newFoto .uploadsfotos{
+    width: 40%;
+    margin-bottom: 3%;
+}
+#editfoto li img {
+    width: 11em;
+    height: 12em;
+    margin: 0 4em;
+}
+/* FAQ: LA PAGINA DELLE INFORMAZIONI E DOMANDE FREQUENTI*/
+#navFaq div{
+    width: 50%;
+}
+#navFaq{
+    margin: 0 1%;
+}
+#navFaq li, #contentFaq li{
+    margin: 2% 0;
+}
+#contentFaq{
+   display: inline-block;
+} 
+#contentFaq h3{
+    margin-top: 2%;
+}
+#contentFaq h2{
+    margin: 2% 0 1% 0;
+}
+#contentFaq ul{
+    list-style-type: square;
+}
+#faqnavmenu #home{
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+    padding: 2% 0;
+}
+/*PAGINA AVVISO, DETTA ANCHE MESSAGGIO IMPORTANTE. E' USATA PER AVVISARE L'UTENTE SU UNA CERTA OPERAZIONE CHE SI VA FARE, OPPURE IL SUCCESSO O INSUCCESSO DELL'OPERAZIONE */
+#messaggioImp{
+    margin: 3%;
+    width: 95%;
+}
+#messaggioImp form{   
+    max-width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+#messaggioImp input[type="text"]{
+    max-width: 50%;
+}
+#messaggioImp label{
+    max-width: 50%;
+    margin: 0;
+}
+#messaggioImp input[type="submit"]{
+    margin: 0;
+}
+/*CLASSI E ID PER GLI ELEMENTI PER NON VEDENTI ED ANCHE VISIBILI E LEGGIBILI IN MODALITA' MOBILES, E PER GLI AIUTI ALLA NAVIGAZIONE*/
+.hidden, .viewinmobilelink{
+   position: absolute;
+   left: -200%;
+   top: -200%;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+.mobilegoup{
+    padding-left: 2.3em;
+    background-image: url("images/uparrow.png");
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+    background-position: 1em top;
+    margin-top: 2%;
+}
+.mobilegodown{
+    padding-left: 2.3em;
+    background-image: url("images/downarrow.png");
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+    background-position: 1em top;
+    margin-top: 2%;
+}
+/*PAGINE ERRORI */
+.erroriclient{
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white;
+    padding-top: 25%;
+}
+.erroriclient a{
+   color: white; 
+}
+#_404{  
+    background-image: url("images/404.jpg"); 
+}
+#_403{  
+    background-image: url("images/403.jpg"); 
+}
+/*RICERCA AVANZATA PAGINA*/
+#foundannunciolist li{
+    margin-top: 3%;
+    margin-right: 3.5%;
+    padding: 1% 3%;
+    border: 2px solid;
+    border-radius: 0.4em;
+}
+#results{
+    width: 70%;
+}
+#searchbox{
+    width: 25%;
+}
+#searchbox input[maxlength="30"], #searchbox select{
+    width: 85%;
+}
+#searchbox input[type="submit"]{
+    width: 30%;
+    padding: 1%;
+    margin: 2% auto;
+}
+#results li .linker{
+    margin-bottom: 1%;
+}
+#riassuntoricerca{
+    border: 1px solid;
+    padding: 2% 3%;
+    margin: 3%;
+}
+/*Premium request pagina*/
+#premiumrequest > div{
+  width: 80%;
+  padding: 3%;
+  margin: 2% auto;
+}
+/* STILI FREQUENTI */
+/*----- display inline      ----------*/
+#resultlist li, #searchBoxTop input, #citysearch input, #messaggioImp form label, input[type="radio"], #infoUt h4, #infoUt p,.uploadsfotos {
+    display: inline;
+}
+/*---- float left ------*/
+#nav ul li, #navUtente, #selectedNav, #searchUserform, #risultaticontent, #resultUsers, #eventDetail, #navFaq div,
+.prevpage, #etichette div, #searchbox, #results, #contenuto .rangedata .interv div,#oldFoto, #newFoto, #infoUt, #social,#gestUt{
+    float: left;
+}
+/*---- display block---*/
+#resultlist strong, label, input,select, #nav ul li a, #primo_piano ul li a img, #navUtente strong, .linkGest, #linkpart, #viewfullfoto img, #viewfullfoto strong,
+.formusersdata input[type="submit"], .annulla, #editfotolink a, .prevpage, .nextpage, #linkToAll, #gestUt span, #gotopagina input[type="submit"], .hidden, .mobilegodown, .mobilegoup,
+#results li .linker, .opz, #contenuto #newFoto input[type="submit"], #faqnavmenu #home, #messaggioImp form textarea, strong.menuclick, #tornasu span{
+    display: block;
+}
+/*---- clear both ----*/
+#nav ul li[id="searchBoxTop"], #contenuto, #footer, #primo_piano, #viewfullfoto strong, .annulla, #editfotolink a, #contentFaq, #navFaq,#gotopagina div, #contenuto .rangedata fieldset,
+#contenuto #newFoto input[type="submit"], #published,#messaggio, #faqnavmenu #home{
+    clear: both;
+}
+/*---- center text ----*/
+#eventDetail #titolo, #linkpart, #infoev h3, #nav ul li a, #tornasu a,#footer, #primo_piano ul li, #navUtente strong, #showerror, #shownoerror, .annulla, #editfotolink a, .paginacorrente,
+#messaggioImp, .erroriclient, #gestUt span{
+    text-align: center;
+}
+/*-----------------------------------------------------------MEDIA QUERIES-------------------------------------------------------------*/
+/*MEDIA QUERIES MOBILE*/
+@media only screen and (max-width: 1064px){
+body{
+    font-size: 120%;
+}
+#nav{
+    margin: 0;
+}
+input[type="text"], select,input[type="password"]{
+    font-size: 120%;
+    height: 1.5em;
+}
+#nav ul li{
+    width: 85%;
+    text-align: center;
+    float: none;
+    clear: both;
+    display: block;
+    margin-top: 2%;
+}
+#nav #searchBoxTop {
+    left: 0;
+    top: 8em;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 2%;  
+}
+#searchBoxTop label, #searchBoxTop input{
+    margin: 0;
+    padding: 0;
+    width: 75%;
+}
+#searchBoxTop input[type="submit"]{
+  width: 20%; 
+  padding: 1%;
+}
+.hideinmobile li:not([id="searchBoxTop"]){
+   display: block;
+   position: absolute;
+   left: -200%;
+   top: -200%;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+.formobilemenu{
+    display: block;
+    width: 90%;
+    padding: 2% 0;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    text-align: center;
+    background-color: #3366BB;
+    background-image: url("images/dropdownmenu.png");
+    background-size: 2em 2em;
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 3px solid #3366BB;
+    color: white;
+    cursor: pointer;
+}
+#hiddenformobile, .uploadsfotos{
+    display: block;
+}
+#header{
+    background-position: 95% top;
+    background-size: 20% 70%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+#header p{
+    margin-bottom: 2em;
+}
+#contenuto div, #contenuto li{
+    float: none;
+    width: 95%;
+    margin-bottom: 5%;
+}
+#contenuto div{
+    border: 0;
+    border-radius: 0;
+}
+#breadcrumb{
+    margin: 0;
+}
+#primo_piano ul li img {
+    max-height: 10%;
+}
+#primo_piano ul li{
+    width: 95%;
+} 
+#cataloger li a{
+    padding-left: 2.3em;
+    background-image: url("images/downarrow.png");
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+    background-position: 1em top;
+    margin-top: 2%;
+}
+#resultlist li{
+    display: block;
+    width: 90%;
+    margin-bottom: 2%;
+}
+#navUtente{
+    border: none;
+}
+.formusersdata{  
+    width: 60%;
+    padding-top: 3%;
+}
+#infoinput .rangedata{
+    width: 85%;
+}
+#infoinput,#descfield{
+    width: 90%;
+    margin: 0;
+}
+#addEventForm input:not([type="submit"]), #contenuto .rangedata input[class="anno"]{
+    width: 85%;
+}
+.uploadsfotos,#etichette div{
+    float: none;
+    width: 90%;
+}
+#oldFoto, #newFoto{
+ margin-bottom: 2%;
+ margin-right: 0;
+ float: none;
+ width: 80%;
+ border-radius: 0.5em;
+}
+#newFoto input[type="submit"]{
+    width: 90%;
+    margin-left: 0;
+}
+#newFoto .uploadsfotos{
+    width: 80%;
+}
+
+#selectedNav, .inverterdiv{
+    display: flex;
+    flex-direction:  column-reverse; 
+}
+.viewinmobilelink{
+    position: static;
+    top: 0;
+    left: 0;
+    margin: 2% 1%;
+    float: none;
+    width: auto;
+    height: auto;
+    display: block;
+}
+#citysearch form{
+    width: 95%;
+    margin: 5% auto;
+}
+#citysearch input:not([type="submit"]){
+    width: 95%;
+    display: block;
+}
+#citysearch input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+}
+}
+
+@media only screen and (max-width: 760px) {
+#header h1{
+    text-align: left;
+}
+#editfoto li img {
+    width: 60%;
+    height: 60%;
+}  
+#contenuto.formusersdata{  
+    width: 94%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+#signupBody, #logBody{  
+    background-image: none;
+    padding: 0;
+}
+
+#header p, #header h1{
+    margin-left: 2%;
+}
+#header p{
+    width: 55%;
+}
+#header{
+    background-position: top right;
+    background-size: 30% 50%;
+} 
+#contenuto{
+    margin: 3%;
+}
+#addEventForm, #etichette, #jumptofoto{
+    margin: 1%;
+}
+#messaggioImp form{
+    width: 90%;
+    margin: 0;
+}
+#messaggioImp{
+    padding: 0;
+}
+}
+@media only screen and (max-width: 480px){
+#header{
+    height: 10.5em;
+}
+.formobilemenu{
+    width: 93%;
+}
+#contenuto .rangedata .interv div, #contenuto .rangedata input, #contenuto .rangedata input[class="anno"]{
+    float: none;
+    clear: both;
+    display: block;
+    width: 80%;
+}
+#searchBoxTop label, #searchBoxTop input{
+    width: 80%;
+}
+#gotopagina form{
+    width: 90%;
+    margin: 3% 4%;
+}
+#searchBoxTop input[type="submit"]{
+    color: #214178;
+    width: 15%;
+    font-size: 5%;
+    padding-top: 8%;
+    background-image: url("images/search.png");
+    background-size: 60% 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10em;
+}
+#viewfullfoto strong{
+    width: 40%;
+}
+#messaggioImp #segnalazione input[type="radio"],
+#messaggioImp #segnalazione label,#messaggioImp #segnalazione textarea {
+    width: 95%;
+}
+}
+
+/*MEDIA QUERY PRINT*/
+@media print {
+a{
+    text-decoration: none;
+    }
+#header{
+    padding-top: 0;
+    height: 4em;  
+}
+#contenuto{
+    margin: 0;
+    padding-bottom: 0;
+}
+#breadcrumb{
+    color: black;
+    border-color: black;
+    margin-bottom: 3em;
+}
+#footer, #linkToAll,.mobilegodown, .mobilegoup{
+    padding: 0;
+    margin-top: 3%;
+ }
+#footer, #header, body li[class="clickedNav"], a:link, a:visited{ 
+    color: black;
+ }
+#nav li:not([class="clickedNav"]), #navUtente li:not([class="clickedNav"]), #navUtente > h4, #searchUserform,
+#primo_piano ul li a img, #tornasu,#aiutologo,#cataloger,#contenuto input[type="submit"], #gotopagina,
+#gestUt, #seguiut, #fotoev, #searchbox, .annulla, #newFoto, .opz, .linkGest, 
+#addEventForm #etichette, #addEventForm #jumptofoto, #addEventForm #pubadesso, #addEventForm legenda, 
+#addEventForm  .particompilazione fieldset legenda, #contenuto .noshowprint, #contenuto #addEventForm #editfotolink{
+    display: none;
+}
+#resultlist li, #navFaq div{
+    display: block;
+    clear: both;
+}
+#primo_piano ul li{
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+#primo_piano ul li p,  #messaggioImp{
+    text-align: left;
+    padding-left: 1em;
+}
+#navUtente, #infoUt, #social, #infoev, #results, #riassuntoricerca, #oldFoto ol li, #oldFoto, #messaggioImp,
+#primo_piano ul li, #addEventForm fieldset, #addEventForm .particompilazione, #published, .formusersdata{
+    border: none;
+}
+#addEventForm, #etichette, #jumptofoto, #infoinput, #addEventForm fieldset, #contenuto .particompilazione, #contenuto div, .uploadsfotos, #etichette div, #infoinput,#descfield,
+#resultlist, #contenuto form, #contenuto input:not([type="submit"]), #ad, #contenuto .rangedata .interv .anno, #contenuto #messaggioImp form{
+    margin: 0;
+}
+#addEventForm fieldset, #contenuto .particompilazione, #contenuto div, .uploadsfotos, #etichette div, #resultlist, #contenuto form, #contenuto input:not([type="submit"]), 
+#ad, #contenuto .rangedata .interv .anno{
+    padding: 0;
+}
+#resultlist, #contenuto form, #contenuto input:not([type="submit"]), #ad, #contenuto .rangedata .interv .anno{
+    width: 100%;
+}
+.uploadsfotos,#etichette div, #aiutolog, .rangedata div, #oldFoto, #contenuto .rangedata, #contenuto div, .uploadsfotos, #etichette div, #navFaq div{
+    float: none;
+}
+.uploadsfotos,#etichette div, #aiutolog, .rangedata div, #oldFoto, #contenuto .rangedata, .formusersdata, #messaggioImp form{
+    width: 90%;
+}
+h2, h3, h4{
+    margin: 0.5em 0;
+}
+#contenuto #addEventForm fieldset{
+    margin-top: 1.5em;
+ }
+ #mainfieldset fieldset legend{
+     text-decoration: underline;
+ }
+#infoinput,#descfield{
+    page-break-after: always;
+}
+#contenuto div, .uploadsfotos, #etichette div{
+    width: 100%;
+    margin-top: 2em;
+}
+}
+

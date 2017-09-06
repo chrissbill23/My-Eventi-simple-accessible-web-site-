@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE social [
+  <!ELEMENT social (utente,seguaci,segue)>
+  <!ELEMENT utente (#PCDATA)>
+  <!ELEMENT seguaci (user*)>
+  <!ELEMENT segue (user*)>
+  <!ELEMENT user (#PCDATA)>
+]>
+<social>
+       <utente></utente>
+       <seguaci></seguaci>
+       <segue></segue>
+</social>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE notizie [
+<!ELEMENT notizie (utente , lista)>
+<!ELEMENT utente (#PCDATA)>
+<!ELEMENT lista (notizia)*>
+<!ELEMENT notizia (tipo , data , desc)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT desc (p)+>
+<!ELEMENT p (#PCDATA | a | span | abbr | em | strong)*>
+<!ELEMENT a (#PCDATA | span | strong | em | count)*>
+<!ELEMENT count EMPTY>
+<!ELEMENT span (#PCDATA | a | abbr)*>
+<!ELEMENT abbr (#PCDATA)>
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA | span | a | count)*>
+<!ATTLIST a href CDATA #REQUIRED>
+<!ATTLIST a xml:lang (en | it | fr) #IMPLIED>
+<!ATTLIST a lang (en | it | fr) #IMPLIED>
+<!ATTLIST abbr title CDATA #REQUIRED>
+<!ATTLIST abbr xml:lang (en | it | fr) #IMPLIED>
+<!ATTLIST abbr lang (en | it | fr) #IMPLIED>
+<!ATTLIST span xml:lang (en | it | fr) #IMPLIED>
+<!ATTLIST span lang (en | it | fr) #IMPLIED>
+<!ATTLIST span id ID #IMPLIED>
+]>
+<notizie>
+        <utente></utente>
+        <lista></lista>
+</notizie>

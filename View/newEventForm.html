@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+lang="it" >
+<head>
+<title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="My eventi sito di annunci di eventi - Pubblica o modifica il tuo annuncio di evento" />
+    <meta name="description" content="Pubblica un nuo annuncio oppure modifica uno gi&agrave; pubblicato al fine di renderlo pi&ugrave; accessibile, pi&ugrave; visibile o pi&ugrave; accattivante" />
+    <meta name="keywords" content="annuncio, evento, concerto, conferenza, seminario, congresso,convegno, esposizione, mostra,danza, teatro, intrattenimento, 
+                                    musica, scienze, arte, filosofia, letteratura, matematica, informatica, pop, rock, 
+                                    istruttivo, cultura, generale, tecnologia, storia, riunione" />
+    <meta name="author" content="Bile Ezanin Christian Prince Carlos" />
+    <meta name="language" content="italian it" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="./View/my_eventi.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./View/javascript.js"></script>
+</head>
+<body>
+    <div id="hide"></div>
+    <div id="contenuto">
+    <div id="addEventForm">
+                <span id="forEdit"></span>
+                <p><strong>ATTENZIONE : </strong><a href="index.php?action=faq&amp;id=rulesPublish"> Assicurati di aver letto le regole di pubblicazione prima di procedere con l'operazione</a></p>
+                <span class="annulla"></span>
+                 <form action="spaziopersonale.php" method="post" enctype="multipart/form-data" onsubmit="return validalaform(true);">
+                 <!-- Tutti gli span nella form vengono sostituiti con i rispettivi tag input e select, nel modulo controller.php -->
+                 <fieldset id="mainfieldset">
+                    <legend id="bigTitle"></legend>
+                    <a href="index.php?action=faq&amp;id=upnewann" id= "aiutologo">
+                    Ottieni maggiori informazioni e aiuto su come compilare la form per pubblicare o modificare un annuncio
+                    </a>
+                    <a class="mobilegodown" href="#titolo">Inizia a compilare dai campi obbligatori</a>
+                    <a class="mobilegodown" href="#etichette">Inizia a compilare dai campi facoltativi </a>
+                    <input type="hidden" name="insertNewEvent"/>
+                    <span id="campiobbligatori"></span>
+                    <span id="campifacoltativi"></span>
+                    <div id="pubadesso">
+                    <input type="submit" name="submit" value="Pubblica ora"/>
+                    <span class="annulla"></span>
+                    </div>
+                 </fieldset>
+                </form> 
+    </div>
+    </div>
+    <div id="tornasu"><a href="#addEventForm">Torna su</a></div>
+</body>
+</html>

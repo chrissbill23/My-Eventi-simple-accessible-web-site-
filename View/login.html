@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+lang="it" >
+<head>
+<title>Accedi al tuo spazio personale - My Eventi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="My eventi sito di annunci di eventi - accedi al tuo spazio personale" />
+    <meta name="description" content="Accedi allo spazio personale utente di My eventi per pubblicare un annuncio, partecipare ad un evento e fare tante altre operazioni" />
+    <meta name="keywords" content="annuncio, evento, concerto, conferenza, seminario, congresso,convegno, esposizione, mostra,danza, teatro, intrattenimento, 
+                                    musica, scienze, arte, filosofia, letteratura, matematica, informatica, pop, rock, 
+                                    istruttivo, cultura, generale, tecnologia, storia, riunione" />
+    <meta name="author" content="Bile Ezanin Christian Prince Carlos" />
+    <meta name="language" content="italian it" />
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="./View/my_eventi.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./View/javascript.js"></script>
+</head>
+<body  id="logBody">
+    <div id="hide"></div>
+    <div  id="contenuto" class = "formusersdata">
+        <p><strong><a href="index.php?action=signup">Se non sei ancora iscritto, Iscriviti</a></strong></p>
+                 <form action="spaziopersonale.php" method="post">
+                 <fieldset>
+                    <legend>Accedi al tuo spazio personale</legend>
+                    <a href="index.php?action=faq&amp;id=idklog" id= "aiutologo">
+                    Ottieni maggiori informazioni ed aiuto sull'accesso allo spazio personale
+                    </a>
+                    <label for="nomeutente">Inserisci il tuo nome utente o la tua <span xml:lang="en" lang="en">email</span>:</label>
+                    <input type="text" name="nomeutente" id="nomeutente" maxlength="70"/>
+                    <label for="password">Inserisci la <span xml:lang="en" lang="en">password</span>:</label>
+                    <input type="password" name="password" id="password" maxlength="20" />
+                    <input type="submit" name ="submit" value="Accedi"/>      
+                    <p> <a href= "index.php?action=getpass">Hai dimenticato la tua <span xml:lang="en" lang="en">password</span> ?</a></p>
+                 </fieldset>
+                </form> 
+                <a class="annulla" accesskey="n" href="index.php">Annulla l'accesso e torna alla pagina principale</a>
+    </div>
+</body>
+</html>

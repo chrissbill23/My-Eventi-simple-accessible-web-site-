@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE detailsEvento [
+<!ELEMENT detailsEvento (evento , title , data+ , ora , minuto , indirizzo , tipo , categ , breveDesc , desc , foto , etichette , lastmodified , lastquarantine , partecipazioni)>
+<!ELEMENT evento (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT ora (#PCDATA)>
+<!ELEMENT minuto (#PCDATA)>
+<!ELEMENT indirizzo (denom , indiri , comune , provincia)>
+<!ELEMENT denom (#PCDATA)>
+<!ELEMENT indiri (#PCDATA)>
+<!ELEMENT comune (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT categ (#PCDATA)>
+<!ELEMENT breveDesc (p)*>
+<!ELEMENT desc (p)*>
+<!ELEMENT foto (img)*>
+<!ELEMENT etichette (etichetta)*>
+<!ELEMENT etichetta (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ELEMENT p (#PCDATA | a | abbr | span)*>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT abbr (#PCDATA)>
+<!ELEMENT span (#PCDATA)>
+<!ELEMENT lastmodified (#PCDATA)>
+<!ELEMENT lastquarantine (#PCDATA)>
+<!ELEMENT partecipazioni (partecipazione)*>
+<!ELEMENT partecipazione (#PCDATA)>
+<!ATTLIST abbr title CDATA #REQUIRED>
+<!ATTLIST span xml:lang (en | it | fr) #REQUIRED>
+<!ATTLIST a href CDATA #REQUIRED>
+<!ATTLIST a xml:lang (en | it | fr) #REQUIRED>
+<!ATTLIST data id ID #REQUIRED>
+<!ATTLIST denom id ID #REQUIRED>
+<!ATTLIST indiri id ID #REQUIRED>
+<!ATTLIST comune id ID #REQUIRED>
+<!ATTLIST provincia id ID #REQUIRED>
+<!ATTLIST img src CDATA #REQUIRED>
+<!ATTLIST img alt CDATA #REQUIRED>
+]>
+<detailsEvento>
+        <evento>ev59afb78486aec</evento>
+        <title>sdvsdsvd sdvsvds svdsv</title>
+        <data id="dataSvolgimento">21/02/1995</data>
+        <data id="pubblicazione">06/09/2017</data>
+        <ora>23</ora>
+        <minuto>05</minuto>
+        <indirizzo>
+            <denom id="denomvia">VIA</denom>
+            <indiri id="viaevento">LCLMDOSMAO</indiri>
+            <comune id="comevento">TREVISO</comune>
+            <provincia id="provevento">TREVISO</provincia>
+        </indirizzo>
+        <tipo>Concerto</tipo>
+        <categ>Intrattenimento</categ>
+        <breveDesc><p>j9jpnsioidneiej wijeoiw</p></breveDesc>
+        <desc><p>niosnoinowinejwn</p></desc>
+        <foto/>
+        <etichette/>
+        <lastmodified>06/09/2017</lastmodified>
+        <lastquarantine/>
+        <partecipazioni/>
+</detailsEvento>

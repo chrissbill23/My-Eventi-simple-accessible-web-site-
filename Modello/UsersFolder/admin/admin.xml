@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fileprivato [
+<!ELEMENT fileprivato (utente , partecipazioni)>
+<!ELEMENT utente (#PCDATA)>
+<!ELEMENT partecipazioni (partecipazione)*>
+<!ELEMENT partecipazione (evento)>
+<!ELEMENT evento (#PCDATA)>
+]>
+<fileprivato>
+       <utente>admin</utente>
+       <partecipazioni>
+       
+</partecipazioni>
+</fileprivato>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+lang="it" >
+<head>
+<title></title>
+    <!--[if lt IE 8]> <html class="ie6 oldie">
+    <meta http-equiv="refresh" content="0; url=View/messaggiornabrowser.html" />    
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="My eventi sito di annunci di eventi" />
+    <meta name="keywords" content="annuncio, evento, concerto, conferenza, seminario, congresso,convegno, esposizione, mostra,danza, teatro, intrattenimento, 
+                                    musica, scienze, arte, filosofia, letteratura, matematica, informatica, pop, rock, 
+                                    istruttivo, cultura, generale, tecnologia, storia, riunione" />
+    <meta name="language" content="italian it" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="./View/my_eventi.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./View/javascript.js"></script>
+</head>
+<body onload="checkMobileAndLoad(false)" >
+    <div id="salta">
+        <a class="hidden" accesskey="7" href="#contenuto">Visita la pagina partendo dai contenuti</a>
+        <a class="hidden" accesskey="8" href="#nav">Visita la pagina partendo dal men&ugrave; di navigazione</a>
+        <a class="hidden" accesskey="9" href="#breadcrumb">Scopri dove ti trovi</a>
+        <a class="hidden" accesskey="p" href="#header">Vai alla presentazione del sito</a>
+    </div>
+    <div id="header">
+        <h1>My Eventi</h1>
+        <p><strong>Scopri e pubblica annunci di eventi nella tua citt&agrave;</strong></p>
+        <p class="hidden"><a href="index.php?action=faq&amp;id=infosito">Ottieni maggiori informazioni su chi siamo</a></p>
+    </div>
+    <div id="nav">
+    <h4 class="menuclick viewinmobilelink">Men&ugrave;</h4>
+        <ul class="menumobile">
+            <li id="home"><a accesskey="1" href="index.php" xml:lang="en" lang="en">Home</a></li>       
+            <li><a accesskey="2" href="archivio.php?arch=types">Tipi di eventi</a></li>
+            <li><a accesskey="3" href="archivio.php?arch=categ">Categorie di eventi</a></li>
+            <li><a accesskey="4" href="archivio.php?citta">Eventi nella tua citt&agrave;</a></li>
+            <li><a accesskey="5" href="index.php?action=faq">Informazioni e Domande frequenti</a></li>
+            <li><a accesskey="6" href="index.php?action=login">Accedi al tuo spazio personale</a></li>
+            <li id="searchBoxTop">
+                <form  action="archivio.php" method="get">
+                 <fieldset>
+                   <label for="search">Cerca un annuncio di evento</label>
+                    <input accesskey="0" type="text" name="keyword" id="search" maxlength="30"/>
+                    <input type="submit" value="cerca"/>
+                 </fieldset>
+                </form> 
+            </li>
+        </ul>
+    </div>

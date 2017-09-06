@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+lang="it" >
+<head>
+<title>Impostazioni del tuo profilo utente - My Eventi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="My eventi sito di annunci di eventi - impostazioni utente" />
+    <meta name="description" content="Modifica le tue informazioni utente, o elimina il tuo account" />
+    <meta name="keywords" content="annuncio, evento, concerto, conferenza, seminario, congresso,convegno, esposizione, mostra,danza, teatro, intrattenimento, 
+                                    musica, scienze, arte, filosofia, letteratura, matematica, informatica, pop, rock, 
+                                    istruttivo, cultura, generale, tecnologia, storia, riunione" />
+    <meta name="author" content="Bile Ezanin Christian Prince Carlos" />
+    <meta name="language" content="italian it" />
+    <link href="./View/my_eventi.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./View/javascript.js"></script>
+</head>
+<body id="signupBody">
+    <div id="hide"></div>
+    <div id="contenuto">
+        <a class="hidden" href="#de"> Salta il form delle modifiche e vai a elimina il tuo conto <span xml:lang="en" lang="en">My</span> eventi</a>
+        <form class="formusersdata" action="spaziopersonale.php" method="post">
+            <fieldset>
+                <legend>Modifica le tue informazioni personali e le tue credenziali di accesso</legend>
+                <a href="index.php?action=faq&amp;id=impost" id= "aiutologo">
+                Ottieni aiuto e informazioni sul modulo di modifica del tuo profilo
+                </a>
+                <fieldset>
+                <legend>Modifica le informazioni personali</legend>
+                    <input type="hidden" name ="accountsetting"/>
+                    <label for="cognome">Modifica il tuo cognome ( al massimo 20 caratteri):</label>
+                    <input type="text" name="cognome" id="cognome" maxlength="20"/>
+                    <label for="nome">Modifica il tuo nome ( al massimo 30 caratteri):</label>
+                    <input type="text" name="nome" id="nome" maxlength="30"/>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Modifica le tue credenziali di accesso</legend>
+                    <label for="mail">Modifica la tua <span xml:lang="en" lang="en">email</span> ( al massimo 70 caratteri):</label>
+                    <input type="text" name="mail" id="mail" maxlength="70"/>
+                    <fieldset>
+                        <legend>Cambio password</legend>
+                        <label for="oldpassword"> Inserisci la tua vecchia <span xml:lang="en" lang="en">password</span> : 
+                        <em>La password che usi attualmente per accedere al tuo spazio personale</em></label>
+                        <input type="password" name="oldpassword" id="oldpassword" maxlength="20" />
+                        <label for="newpassword1"> Inserisci la nuova <span xml:lang="en" lang="en">password</span> ( un minimo di 8 caratteri e un massimo di 20 caratteri ) :</label>
+                        <input type="password" name="newpassword1" id="newpassword1" maxlength="20" />
+                        <label for="newpassword2"> Reinserisci la nuova <span xml:lang="en" lang="en">password</span> : 
+                        <em>La <span xml:lang="en" lang="en">password</span> reinserita deve coincidere con la nuova <span xml:lang="en" lang="en">password</span> inserita. &Egrave;
+                     un modo per assicurarci che tu non abbia sbagliato ad inserirla.</em></label>
+                        <input type="password" name="newpassword2" id="newpassword2" maxlength="20" />
+                    </fieldset>
+                </fieldset>
+                <span id="de"></span>
+                <input type="submit" name ="submit" value="Salva le modifiche" class= "clearBoth"/>
+                <a accesskey="n" class="annulla" href="spaziopersonale.php"> Annulla le modifiche e torna nel tuo spazio personale</a>
+            </fieldset>
+        </form> 
+    </div>
+</body>
+</html>

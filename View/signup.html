@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+lang="it" >
+<head>
+<title>Iscrizione a My Eventi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="My eventi sito di annunci di eventi - Iscriviti gratuitamente" />
+    <meta name="description" content="Iscriviti per accedere allo spazio personale utente di My eventi che ti offre tanti vantaggi e possibilità, tra cui pubblicare un annuncio e partecipare ad un evento" />
+    <meta name="keywords" content="annuncio, evento, concerto, conferenza, seminario, congresso,convegno, esposizione, mostra,danza, teatro, intrattenimento, 
+                                    musica, scienze, arte, filosofia, letteratura, matematica, informatica, pop, rock, 
+                                    istruttivo, cultura, generale, tecnologia, storia, riunione" />
+    <meta name="author" content="Bile Ezanin Christian Prince Carlos" />
+    <meta name="language" content="italian it" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="./View/my_eventi.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./View/javascript.js"></script>
+</head>
+<body id="signupBody">
+        <div id="hide"></div>
+        <div id="contenuto" class="formusersdata">
+                 <form  action="signup.php" method="post" onsubmit="return validalaform(false);">
+                 <fieldset>
+                    <legend>Modulo di iscrizione a <span xml:lang="en" lang="en">My </span>Eventi</legend>
+                    <a href="index.php?action=faq&amp;id=iscr" id= "aiutologo">
+                    Ottieni maggiori informazioni e aiuto sul modulo di iscrizione
+                    </a>
+                    <fieldset>
+                    <legend>Dati anagrafici</legend>
+                    <label for="cognome">Inserisci il tuo cognome ( al massimo 20 caratteri ), <em>Esempio: Rossi</em></label>
+                    <input type="text" name="cognome" id="cognome" maxlength="20"/>
+                    
+                    <label for="nome">Inserisci il tuo nome ( al massimo 30 caratteri ), <em>Esempio: Mario</em> </label>
+                    <input type="text" name="nome" id="nome" maxlength="30"/>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Dati di accesso</legend>
+                    <label for="mail">Inserisci una <span xml:lang="en" lang="en">email</span> valida (al massimo 70 caratteri), <em>Esempio : mario_rossi&#64;gmail.com</em></label>
+                    <input type="text" name="mail" id="mail" maxlength="70"/>
+                    <label for="nomeutente">Inserisci un nome utente ( al massimo 20 caratteri ), <em>Esempio : mario.rossi</em></label>
+                    <input type="text" name="nomeutente" id="nomeutente" maxlength="20"/>
+                    
+                    <label for="password1"> Inserisci una <span xml:lang="en" lang="en">password ( al minimo 8 caratteri, e al massimo 20 caratteri ):</span>
+                    <em>La <span xml:lang="en" lang="en">password</span> è una parola segreta che 
+                    ti permette di essere l'unico ad accedere al tuo spazio personale su questo sito.</em> </label>
+                    <input type="password" name="password1" id="password1" maxlength="20" /> 
+                    <label for="password2"> Reinserisci la <span xml:lang="en" lang="en">password ( al minimo 8 caratteri, e al massimo 20 caratteri ):</span> 
+                    <em>La <span xml:lang="en" lang="en">password</span> reinserita deve coincidere con la <span xml:lang="en" lang="en">password</span> inserita precedentemente. &Egrave;
+                     un modo per assicurarci che tu non abbia sbagliato ad inserirla.</em></label>
+                    <input type="password" name="password2" id="password2" maxlength="20" /> 
+                    </fieldset>
+                    <input type="submit" name ="submit" value="Iscriviti" class= "clearBoth"/>
+                    <a href="index.php" accesskey="n" class="annulla"> Annulla l'iscrizione e torna nella pagina principale</a>
+                 </fieldset>
+                </form> 
+    </div>
+</body>
+</html>
