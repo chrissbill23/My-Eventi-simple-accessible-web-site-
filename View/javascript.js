@@ -226,7 +226,7 @@ function validateDataeOra(){//Funzione che ritorna un array con length > 0 se ci
                 setTagToerror(a, true);
             }
            if(ore < 0 ||ore >= 24 || minuti < 0 || minuti >= 60){
-                errori.push("Inserire un'ora corretta: l'ora deve essere compresa tra 0 e 24 e i minuti tra 0 e 59");
+                errori.push("Inserire un'ora corretta: l'ora deve essere compresa tra 0 e 23 e i minuti tra 0 e 59");
                 setTagToerror(o, true);
                 setTagToerror(min,true);
             }
